@@ -8,7 +8,9 @@ public class Runner {
         try{
             runner.runMatrixRotation();
 
-            runner.runLongestPalindrom();
+            runner.runLongestPalindrome();
+
+            runner.runRotateArray();
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -29,15 +31,19 @@ public class Runner {
         matrix = mr.rotate(matrix);
     }
 
-    private void runLongestPalindrom(){
-        LongestPalindrom longestPalindrom = new LongestPalindrom();
+    private void runLongestPalindrome(){
+        LongestPalindrome longestPalindrome = new LongestPalindrome();
 
-        String toTest = "testestestestestestestes";
+        String toTest = "oromanoacataamoresadamasamadaseromaatacaonamoro";
 
-        longestPalindrom.findLongestPalindrome(toTest);
+        longestPalindrome.findLongestPalindrome(toTest);
+    }
 
-        String str = "forgeeksskeegfor";
-        System.out.println("Length is: " + longestPalindrom.findLongestPalindrome(str));
+    private void runRotateArray(){
+        int array[] = {1,2,3,4,5,6,7,8,9,10};
+
+        RotateArray rotateArray = new RotateArray();
+        rotateArray.rotate(array, 5);
     }
 
 }
