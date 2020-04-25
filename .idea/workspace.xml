@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db13ca1-d410-4902-b36a-0f7637f58394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/algorithms/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithms/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

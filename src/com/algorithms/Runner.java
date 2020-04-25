@@ -16,6 +16,12 @@ public class Runner {
 
             runner.runBinarySearch();
 
+            // Find occurrence of character in a string using Java Collection hashmap. Given a string " Amazon Web Services" the output should be: Character a appears 2 times Character b appears 1 times...
+            // Given two arrays of sorted numbers, return a new array containing the duplicate numbers.
+            // Design an object oriented valet/garage parking system, that keep track of cars in each garage
+            // Write code to find the subtree of a tree which sums to the largest value.
+
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
