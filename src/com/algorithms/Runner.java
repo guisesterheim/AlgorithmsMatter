@@ -1,5 +1,7 @@
 package com.algorithms;
 
+import javax.print.attribute.standard.JobName;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -12,14 +14,14 @@ public class Runner {
 
             runner.runRotateArray();
 
+            runner.runBinarySearch();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
     }
 
     private void runMatrixRotation() throws Exception{
-        MatrixRotation mr = new MatrixRotation();
-
         int matrix[][] = {
                 { 1, 2, 3, 4, 5},
                 { 6, 7, 8, 9, 10},
@@ -28,14 +30,14 @@ public class Runner {
                 { 21, 22, 23, 24, 25}
         };
 
+        MatrixRotation mr = new MatrixRotation();
         matrix = mr.rotate(matrix);
     }
 
     private void runLongestPalindrome(){
-        LongestPalindrome longestPalindrome = new LongestPalindrome();
-
         String toTest = "oromanoacataamoresadamasamadaseromaatacaonamoro";
 
+        LongestPalindrome longestPalindrome = new LongestPalindrome();
         longestPalindrome.findLongestPalindrome(toTest);
     }
 
@@ -44,6 +46,13 @@ public class Runner {
 
         RotateArray rotateArray = new RotateArray();
         rotateArray.rotate(array, 5);
+    }
+
+    private void runBinarySearch(){
+        int array[] = {1,2,3,4,5,6,7,8,9,10};
+
+        BinarySearch binarySearch = new BinarySearch();
+        binarySearch.run(array, 14, 0, array.length);
     }
 
 }
