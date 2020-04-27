@@ -52,6 +52,11 @@ public class MatrixRotation {
     }
 
     private void print(int mat[][]) {
+        System.out.println();
+        System.out.println("#######################################################################");
+        System.out.println("---------------------- Result of matrix rotation ----------------------");
+        System.out.println("#######################################################################");
+
         int n = mat.length;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++)
@@ -59,6 +64,5 @@ public class MatrixRotation {
 
             System.out.print("\n");
         }
-        System.out.print("\n");
     }
 }

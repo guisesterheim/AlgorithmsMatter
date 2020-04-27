@@ -23,10 +23,14 @@ public class RotateArray {
     }
 
     private void print(int[] array){
-        System.out.print("\nRotated array: ");
+        System.out.println();
+        System.out.println("#######################################################################");
+        System.out.println("---------------------- Result of Rotate Array  -----------------------");
+        System.out.println("#######################################################################");
+
         for(int i = 0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
-
 }

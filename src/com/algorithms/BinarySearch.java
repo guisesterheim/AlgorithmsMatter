@@ -3,10 +3,10 @@ package com.algorithms;
 public class BinarySearch {
 
     private int binarySearch(int[] array, int searchValue, int startingIndex, int endingIndex) {
-        if (endingIndex >= startingIndex)
-            return -1;
-
         int middle = startingIndex + (endingIndex - startingIndex) / 2;
+
+        if(middle >= array.length || middle < 0)
+            return -1;
 
         if (array[middle] == searchValue)
             return startingIndex;
@@ -22,7 +22,12 @@ public class BinarySearch {
     }
 
     private void print(int index){
-        System.out.println("\n\nBinary Search Index found: "+index);
+        System.out.println();
+        System.out.println("#######################################################################");
+        System.out.println("------------------------ Result of BinarySearch -----------------------");
+        System.out.println("#######################################################################");
+
+        System.out.println("Binary Search Index found: "+index);
     }
 
 }

@@ -1,6 +1,6 @@
 package com.algorithms;
 
-import javax.print.attribute.standard.JobName;
+import java.util.HashMap;
 
 public class Runner {
 
@@ -16,15 +16,20 @@ public class Runner {
 
             runner.runBinarySearch();
 
-            // Find occurrence of character in a string using Java Collection hashmap. Given a string " Amazon Web Services" the output should be: Character a appears 2 times Character b appears 1 times...
-            // Given two arrays of sorted numbers, return a new array containing the duplicate numbers.
-            // Design an object oriented valet/garage parking system, that keep track of cars in each garage
-            // Write code to find the subtree of a tree which sums to the largest value.
-
+            runner.runCountCharacters();
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
+            ex.printStackTrace();
         }
+    }
+
+    private void runCountCharacters(){
+        String charactersToFind = "Amazon Web Services";
+        HashMap<Integer, Character> map = createMap(charactersToFind);
+
+        CountCharacterOccurrence countCharacterOccurrence = new CountCharacterOccurrence();
+        countCharacterOccurrence.countAndPrint(map, charactersToFind);
     }
 
     private void runMatrixRotation() throws Exception{
@@ -58,7 +63,16 @@ public class Runner {
         int array[] = {1,2,3,4,5,6,7,8,9,10};
 
         BinarySearch binarySearch = new BinarySearch();
-        binarySearch.run(array, 14, 0, array.length);
+        binarySearch.run(array, 5, 0, array.length);
     }
 
+    private HashMap<Integer, Character> createMap(String toMap){
+        HashMap<Integer, Character> map = new HashMap<>();
+
+        for(int i = 0; i < toMap.chars().count(); i++){
+            map.put(i, (char) toMap.charAt(i));
+        }
+
+        return map;
+    }
 }

@@ -44,9 +44,18 @@ public class LongestPalindrome {
             }
         }
 
-        print("Longest Palindrome: "+str.substring(start, start+maxLength));
-        print("Length is: "+maxLength);
+        print(str.substring(start, start+maxLength), maxLength);
 
         return maxLength;
+    }
+
+    private void print(String longestPalindrome, Integer maxLength){
+        System.out.println();
+        System.out.println("#######################################################################");
+        System.out.println("-------------------- Result of LongestPalindrome  ---------------------");
+        System.out.println("#######################################################################");
+
+        System.out.println("Longest Palindrome: "+longestPalindrome);
+        System.out.println("Length is: "+maxLength);
     }
 }
