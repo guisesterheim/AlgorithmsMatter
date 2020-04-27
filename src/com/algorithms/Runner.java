@@ -26,10 +26,10 @@ public class Runner {
 
     private void runCountCharacters(){
         String charactersToFind = "Amazon Web Services";
-        HashMap<Integer, Character> map = createMap(charactersToFind);
+        HashMap<Integer, Character> map = createMap(charactersToFind.toLowerCase());
 
         CountCharacterOccurrence countCharacterOccurrence = new CountCharacterOccurrence();
-        countCharacterOccurrence.countAndPrint(map, charactersToFind);
+        countCharacterOccurrence.countAndPrint(map, charactersToFind.toLowerCase());
     }
 
     private void runMatrixRotation() throws Exception{

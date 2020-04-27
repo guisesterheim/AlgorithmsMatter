@@ -6,7 +6,7 @@ public class CountCharacterOccurrence {
 
     public void countAndPrint(HashMap<Integer, Character> map, String charactersToFind){
         HashMap<Character, Integer> counter = new HashMap<Character, Integer>();
-
+        
         map.values().iterator().forEachRemaining(character -> {
             if(charactersToFind.contains(character.toString())) {
                 int totalCountForCharacter = 0;
