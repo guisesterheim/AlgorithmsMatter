@@ -18,10 +18,19 @@ public class Runner {
 
             runner.runCountCharacters();
 
+            runner.runFibonacci();
+
+            // Binary Tree
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFibonacci(){
+        Fibonacci fibonacci = new Fibonacci();
+        fibonacci.calculateAndPrint(30);
     }
 
     private void runCountCharacters(){
