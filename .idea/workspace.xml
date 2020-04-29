@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db13ca1-d410-4902-b36a-0f7637f58394" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/algorithms/FindCharacterInTheMiddle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/algorithms/GCDOfList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/algorithms/LongestStringInOrderWithKWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/algorithms/ToggleHousesActiveInactive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Fibonacci.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmsMatter/com/algorithms/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/algorithms/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithms/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/algorithms/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithms/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,46 +65,46 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1977" y="0" width="678" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1587770671611" />
-    <state width="1874" height="229" key="GridCell.Tab.0.bottom" timestamp="1588130631907">
+    <state width="1874" height="271" key="GridCell.Tab.0.bottom" timestamp="1588168245791">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601471" />
-    <state width="1874" height="229" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130631907" />
-    <state width="1874" height="229" key="GridCell.Tab.0.center" timestamp="1588130631907">
+    <state width="1874" height="271" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245791" />
+    <state width="1874" height="271" key="GridCell.Tab.0.center" timestamp="1588168245790">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601471" />
-    <state width="1874" height="229" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130631907" />
-    <state width="1874" height="229" key="GridCell.Tab.0.left" timestamp="1588130631906">
+    <state width="1874" height="271" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245790" />
+    <state width="1874" height="271" key="GridCell.Tab.0.left" timestamp="1588168245790">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601471" />
-    <state width="1874" height="229" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130631906" />
-    <state width="1874" height="229" key="GridCell.Tab.0.right" timestamp="1588130631907">
+    <state width="1874" height="271" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245790" />
+    <state width="1874" height="271" key="GridCell.Tab.0.right" timestamp="1588168245790">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601471" />
-    <state width="1874" height="229" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130631907" />
-    <state width="1874" height="229" key="GridCell.Tab.1.bottom" timestamp="1588130632045">
+    <state width="1874" height="271" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245790" />
+    <state width="1874" height="229" key="GridCell.Tab.1.bottom" timestamp="1588168245782">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601604" />
-    <state width="1874" height="229" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130632045" />
-    <state width="1874" height="229" key="GridCell.Tab.1.center" timestamp="1588130632045">
+    <state width="1874" height="229" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245782" />
+    <state width="1874" height="229" key="GridCell.Tab.1.center" timestamp="1588168245781">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601603" />
-    <state width="1874" height="229" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130632045" />
-    <state width="1874" height="229" key="GridCell.Tab.1.left" timestamp="1588130632045">
+    <state width="1874" height="229" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245781" />
+    <state width="1874" height="229" key="GridCell.Tab.1.left" timestamp="1588168245781">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601603" />
-    <state width="1874" height="229" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130632045" />
-    <state width="1874" height="229" key="GridCell.Tab.1.right" timestamp="1588130632045">
+    <state width="1874" height="229" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245781" />
+    <state width="1874" height="229" key="GridCell.Tab.1.right" timestamp="1588168245781">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="229" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1588121601603" />
-    <state width="1874" height="229" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588130632045" />
+    <state width="1874" height="229" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1588168245781" />
     <state x="1990" y="246" key="run.anything.popup" timestamp="1588129611491">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -111,22 +118,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithms/Fibonacci.java</url>
-          <line>43</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithms/Fibonacci.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithms/Fibonacci.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/com/algorithms/GCDOfList.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

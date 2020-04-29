@@ -20,12 +20,61 @@ public class Runner {
 
             runner.runFibonacci();
 
+            runner.runFindLongestStringInOrderWithKWords();
+
+            runner.runFindTheMiddleCharacter();
+
+            runner.runToggleHousesActiveInactive();
+
+            runner.runFindGCD();
+
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindGCD(){
+        // Find GCD of a given list of numbers Challenge
+        // MMC in Portuguese
+
+        int[] arr = {3,6,9,15};
+
+        GCDOfList gcdOfList = new GCDOfList();
+        gcdOfList.runAndPrint(arr);
+    }
+
+    private void runToggleHousesActiveInactive(){
+        // Houses active and inactive competition challenge
+
+        int days = 1;
+        int[] states = {1,0,0,0,0,1,0,0};
+
+        ToggleHousesActiveInactive toggleHousesActiveInactive = new ToggleHousesActiveInactive();
+        toggleHousesActiveInactive.runAndPrint(states, days);
+    }
+
+    private void runFindTheMiddleCharacter(){
+        // Source of this challenge: https://www.codewars.com/kata/56747fd5cb988479af000028/discuss/java
+        // Find the middle character
+
+        String word = "testing";
+
+        FindCharacterInTheMiddle findCharacterInTheMiddle = new FindCharacterInTheMiddle();
+        findCharacterInTheMiddle.findAndPrint(word);
+    }
+
+    private void runFindLongestStringInOrderWithKWords(){
+        // Source of this challenge: https://www.codewars.com/kata/56a5d994ac971f1ac500003e/discuss/java
+        // Find longest string in order using K words
+
+        String[] strarr = {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"};
+        int k = 2;
+
+        LongestStringInOrderWithKWords longestStringInOrderWithKWords = new LongestStringInOrderWithKWords();
+        longestStringInOrderWithKWords.findAndPrint(strarr, k);
     }
 
     private void runFibonacci(){
