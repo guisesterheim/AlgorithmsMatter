@@ -28,12 +28,21 @@ public class Runner {
 
             runner.runFindGCD();
 
+            runner.runConvertDate();
+
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runConvertDate(){
+        int seconds = 0;
+
+        DateHumanReadble dateHumanReadble = new DateHumanReadble();
+        dateHumanReadble.convertAndPrint(seconds);
     }
 
     private void runFindGCD(){
