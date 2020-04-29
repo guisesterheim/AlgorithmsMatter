@@ -1,5 +1,9 @@
 package com.algorithms;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 public class DateHumanReadble {
 
     public void convertAndPrint(int seconds){
@@ -17,6 +21,8 @@ public class DateHumanReadble {
         int minutesToPrint = hoursToPrint % 60;
         hoursToPrint = hoursToPrint / 60;
 
-        return hoursToPrint + ":" + minutesToPrint + ":" + secondsToPrint;
+        int[] data = new int[] {hoursToPrint, minutesToPrint, secondsToPrint};
+        return IntStream.of(data).mapToObj(string -> String.format("%02d", string))
+                .collect(Collectors.joining(":"));
     }
 }
