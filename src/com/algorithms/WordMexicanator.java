@@ -11,7 +11,7 @@ public class WordMexicanator {
         System.out.println("--------------------- Result of Word Mexicanator ----------------------");
         System.out.println("#######################################################################");
 
-        System.out.println("Word changed: "+transform(words));
+        System.out.println("Words changed: "+transform(words));
     }
 
     private String transform(String words){
@@ -22,5 +22,4 @@ public class WordMexicanator {
                     return new StringBuilder(word).append(word.charAt(0)+"ay").deleteCharAt(0);
                 }).collect(Collectors.joining(" "));
     }
-
 }

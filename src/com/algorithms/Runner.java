@@ -39,12 +39,22 @@ public class Runner {
             runner.runCamelCasePrinter();
 
             runner.runWordMexicanator();
+
+            runner.runPrimeNumberTest();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runPrimeNumberTest(){
+        // Challenge available here https://www.codewars.com/kata/5262119038c0985a5b00029f/java
+        int number = 2147483647;
+
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+        primeNumbers.findAndPrint(number);
     }
 
     private void runWordMexicanator(){
