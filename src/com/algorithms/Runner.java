@@ -35,12 +35,22 @@ public class Runner {
             runner.runEqualSidesOfAnArray();
 
             runner.runHighestScoringWord();
+
+            runner.runCamelCasePrinter();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runCamelCasePrinter(){
+        // Challenge available here: https://www.codewars.com/kata/587731fda577b3d1b0001196/train/java
+        String words = " camel  case word";
+
+        CamelCasePrinter camelCasePrinter = new CamelCasePrinter();
+        camelCasePrinter.transformAndPrint(words);
     }
 
     private void runHighestScoringWord(){
