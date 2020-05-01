@@ -37,12 +37,22 @@ public class Runner {
             runner.runHighestScoringWord();
 
             runner.runCamelCasePrinter();
+
+            runner.runWordMexicanator();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runWordMexicanator(){
+        // Challenge available here: https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/java
+        String word = "tempora o mores !";
+
+        WordMexicanator wordMexicanator = new WordMexicanator();
+        wordMexicanator.transformAndPrint(word);
     }
 
     private void runCamelCasePrinter(){
