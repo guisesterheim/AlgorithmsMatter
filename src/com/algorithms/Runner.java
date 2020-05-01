@@ -30,6 +30,11 @@ public class Runner {
 
             runner.runConvertDate();
 
+            runner.runDubstep();
+
+            runner.runEqualSidesOfAnArray();
+
+            runner.runHighestScoringWord();
             // Binary Tree
 
         }catch(Exception ex){
@@ -38,7 +43,35 @@ public class Runner {
         }
     }
 
+    private void runHighestScoringWord(){
+        // Challenge available here: https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/java
+
+        String words = "what time are we climbing up to the volcano";
+
+        HighestScoringWord highestScoringWord = new HighestScoringWord();
+        highestScoringWord.findAndPrint(words);
+    }
+
+    private void runEqualSidesOfAnArray(){
+        // Challenge available here: https://www.codewars.com/kata/5679aa472b8f57fb8c000047
+
+        int[] arr = {1,2,3,4,3,2,1};
+
+        EqualSidesOfAnArray equalSidesOfAnArray = new EqualSidesOfAnArray();
+        equalSidesOfAnArray.findAndPrint(arr);
+    }
+
+    private void runDubstep(){
+        // Challenge available here: https://www.codewars.com/kata/551dc350bf4e526099000ae5
+
+        String song = "WUBWUBIWUBAMWUBWUBX";
+
+        Dubstep dubstep = new Dubstep();
+        dubstep.transformAndPrint(song);
+    }
+
     private void runConvertDate(){
+        // Challenge available here: https://www.codewars.com/kata/52685f7382004e774f0001f7
         int seconds = 0;
 
         DateHumanReadble dateHumanReadble = new DateHumanReadble();
