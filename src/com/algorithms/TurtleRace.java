@@ -1,16 +1,5 @@
 package com.algorithms;
 
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Test;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.time.Duration;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 public class TurtleRace {
 
     public void calcAndPrint(int speed1, int speed2, int distance){
@@ -36,14 +25,6 @@ public class TurtleRace {
         res[2] = (int) (time * 3600) % 60;
 
         return res;
-    }
-
-    @Test
-    public void tests() {
-        System.out.println("Basic Tests");
-        assertArrayEquals(new int[]{0, 32, 18}, TurtleRace.race(720, 850, 70));
-        assertArrayEquals(new int[]{3, 21, 49}, TurtleRace.race(80, 91, 37));
-        assertArrayEquals(new int[]{2, 0, 0}, TurtleRace.race(80, 100, 40));
     }
 
 }

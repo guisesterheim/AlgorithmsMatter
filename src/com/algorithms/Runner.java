@@ -43,12 +43,24 @@ public class Runner {
             runner.runPrimeNumberTest();
 
             runner.runTurtleRace();
+
+            runner.runSupermarketQueue();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runSupermarketQueue(){
+        // Challenge available here: https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/java
+        int[] customers = new int[] {2,7,2,7,5,6,4,6,3,4,5,3,4,3,6,7};
+        //int[] customers = new int[] {10,2,3,3};
+        int tills = 4;
+
+        SupermarketQueue supermarketQueue = new SupermarketQueue();
+        supermarketQueue.processAndPrint(customers, tills);
     }
 
     private void runTurtleRace(){
