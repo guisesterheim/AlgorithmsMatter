@@ -41,6 +41,8 @@ public class Runner {
             runner.runWordMexicanator();
 
             runner.runPrimeNumberTest();
+
+            runner.runTurtleRace();
             // Binary Tree
 
         }catch(Exception ex){
@@ -49,9 +51,19 @@ public class Runner {
         }
     }
 
+    private void runTurtleRace(){
+        // Challenge available here: https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/java
+        int speed1 = 80;
+        int speed2 = 91;
+        int lead = 37;
+
+        TurtleRace turtleRace = new TurtleRace();
+        turtleRace.calcAndPrint(speed1, speed2, lead);
+    }
+
     private void runPrimeNumberTest(){
         // Challenge available here https://www.codewars.com/kata/5262119038c0985a5b00029f/java
-        int number = 2147483647;
+        int number = 13;
 
         PrimeNumbers primeNumbers = new PrimeNumbers();
         primeNumbers.findAndPrint(number);
