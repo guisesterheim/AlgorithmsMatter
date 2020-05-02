@@ -49,6 +49,10 @@ public class Runner {
             runner.runFindMissingLetter();
 
             runner.runSudokuValidator();
+
+            runner.runSquaresIntoSquares();
+
+            runner.runReversingAProcess();
             // Binary Tree
 
         }catch(Exception ex){
@@ -57,7 +61,25 @@ public class Runner {
         }
     }
 
+    private void runReversingAProcess(){
+        // Challenge available here: https://www.codewars.com/kata/5dad6e5264e25a001918a1fc/train/java
+
+        String code = "1273409kuqhkoynvvknsdwljantzkpnmfgf";
+        ReversingAProcess reversingAProcess = new ReversingAProcess();
+        reversingAProcess.transformAndPrint(code);
+    }
+
+    private void runSquaresIntoSquares(){
+        // Challenge available here: https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/java
+
+        long number = 11;
+
+        SquaresIntoSquares squaresIntoSquares = new SquaresIntoSquares();
+        squaresIntoSquares.findAndPrint(number);
+    }
+
     private void runSudokuValidator(){
+        // Challenge available here: https://www.codewars.com/kata/sudoku-solution-validator
         int[][] sudoku = {
 /*
                             {5, 3, 4, 6, 7, 8, 9, 1, 2},
@@ -70,7 +92,6 @@ public class Runner {
                             {2, 8, 7, 4, 1, 9, 6, 3, 5},
                             {3, 4, 5, 2, 8, 6, 1, 7, 9}
 */
-
                 {9, 5, 4, 2, 6, 8, 3, 7, 1},
                 {3, 8, 7, 5, 9, 2, 6, 1, 4},
                 {5, 1, 9, 7, 2, 4, 8, 3, 6},
@@ -80,11 +101,7 @@ public class Runner {
                 {4, 9, 8, 6, 1, 3, 7, 2, 5},
                 {1, 6, 5, 3, 7, 9, 4, 8, 2},
                 {6, 2, 1, 8, 3, 5, 9, 4, 7}
-
-
         };
-
-
 
         SudokuValidator sudokuValidator = new SudokuValidator();
         sudokuValidator.validateAndPrint(sudoku);
