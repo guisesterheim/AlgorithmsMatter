@@ -45,12 +45,22 @@ public class Runner {
             runner.runTurtleRace();
 
             runner.runSupermarketQueue();
+
+            runner.runFindMissingLetter();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindMissingLetter(){
+        // Challenge available here: https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/java
+        char[] chars = { 'O','Q','R','S' };
+
+        MissingLetter missingLetter = new MissingLetter();
+        missingLetter.findAndPrint(chars);
     }
 
     private void runSupermarketQueue(){
