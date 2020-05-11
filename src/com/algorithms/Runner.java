@@ -53,12 +53,29 @@ public class Runner {
             runner.runSquaresIntoSquares();
 
             runner.runReversingAProcess();
+
+            runner.runAbbreviateTwoNames();
+
+            runner.runRankWords();
             // Binary Tree
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runRankWords(){
+        RankWords t = new RankWords();
+        t.processAndPrint();
+    }
+
+    private void runAbbreviateTwoNames(){
+        // Challenge available here: https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/java
+
+        String name = "Sam Harris";
+        Abbreviating abbreviating = new Abbreviating();
+        abbreviating.transformAndPrint(name);
     }
 
     private void runReversingAProcess(){
