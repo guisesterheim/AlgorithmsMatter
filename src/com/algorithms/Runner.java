@@ -66,16 +66,26 @@ public class Runner {
 
             runner.runDirectionsReduction();
 
+            runner.runMultiplesOf3Or5();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
     }
 
+    private void runMultiplesOf3Or5(){
+        // Challenge available here: https://www.codewars.com/kata/514b92a657cdc65150000006/train/java
+
+        int number = 10;
+
+        MultiplesOf3Or5 multiplesOf3Or5 = new MultiplesOf3Or5();
+        multiplesOf3Or5.reduceAndPrint(number);
+    }
+
     private void runDirectionsReduction(){
         // Challenge available here: https://www.codewars.com/kata/550f22f4d758534c1100025a/train/java
 
-        String[] arr = new String[]{"NORTH","SOUTH","SOUTH","EAST","WEST","NORTH"};
+        String[] arr = new String[]{"NORTH","SOUTH","SOUTH","EAST","WEST"};
 
         DirectionsReduction directionsReduction = new DirectionsReduction();
         directionsReduction.reduceAndPrint(arr);
