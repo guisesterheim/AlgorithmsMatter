@@ -57,12 +57,35 @@ public class Runner {
             runner.runAbbreviateTwoNames();
 
             runner.runRankWords();
-            // Binary Tree
+
+            runner.runFlattenAndSort();
+
+            runner.runSortLogs();
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runSortLogs(){
+        String[] logs = new String[5];
+        logs[0] = "a1 9 2 3 1";
+        logs[1] = "g1 Act car";
+        logs[2] = "zo4 4 7";
+        logs[3] = "ab1 off KEY dog";
+        logs[4] = "a8 act zoo";
+
+        SortAmazonLogs sortAmazonLogs = new SortAmazonLogs();
+        sortAmazonLogs.sortAndPrint(logs);
+    }
+
+    private void runFlattenAndSort(){
+        // Challenge available here: https://www.codewars.com/kata/57ee99a16c8df7b02d00045f/train/java
+
+        int[][] input = new int[][]{{3, 2, 1}, {7, 9, 8}, {6, 4, 5}};
+        FlattenAndSortArray flattenAndSortArray = new FlattenAndSortArray();
+        flattenAndSortArray.processAndPrint(input);
     }
 
     private void runRankWords(){
