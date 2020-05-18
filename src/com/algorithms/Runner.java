@@ -62,10 +62,28 @@ public class Runner {
 
             runner.runSortLogs();
 
+            runner.runCountCompetitors();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runCountCompetitors(){
+        int numCompetitors = 6;
+        int topNCompetitors = 2;
+        String[] competitors = {"newshop", "shopnow", "afshion", "fashionbeats", "mymarket", "tcellular"};
+        int numReviews = 6;
+        String[] reviews = {"newshop is ṕroviding good services in the city; everyone should use newshop",
+                            "best services by newshop",
+                            "fashionbeats has great services in the city",
+                            "I am proud to have fashionbeats",
+                            "mymarket has awesome services",
+                            "thanks Newshop for the quick delivery"};
+
+        CountAmazonCompetitors countAmazonCompetitors = new CountAmazonCompetitors();
+        countAmazonCompetitors.countAndPrint(numCompetitors, topNCompetitors, competitors, numReviews, reviews);
     }
 
     private void runSortLogs(){

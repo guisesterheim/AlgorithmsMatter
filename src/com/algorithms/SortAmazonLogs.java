@@ -9,6 +9,7 @@ public class SortAmazonLogs {
 
     public void sortAndPrint(String[] array){
         System.out.println();
+        System.out.println();
         System.out.println("#######################################################################");
         System.out.println("------------------------ Result of Sorting Logs -----------------------");
         System.out.println("#######################################################################");
