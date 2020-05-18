@@ -17,19 +17,6 @@ public class CountAmazonCompetitors {
         count(numCompetitors, topNCompetitors, competitors, numReviews, reviews).forEach(s -> System.out.println(s));
     }
 
-    /*
-    int numCompetitors = 6
-    int topNCompetitors = 2
-    String[] competitors = newshop, shopnow, afshion, fashionbeats, mymarket, tcellular
-    int numReviews = 6
-    reviews = "newshop is ṕroviding good services in the city; everyone should use newshop"
-                "best services by newshop"
-                "fashionbeats has great services in the city"
-                "I am proud to have fashionbeats"
-                "mymarket has awesome services"
-                "thanks Newshop for the quick delivery"
-     */
-
     private List<String> count(int numCompetitors, int topNCompetitors, String[] competitors, int numReviews, String[] reviews){
         List<String> competitorsToSearch = Arrays.stream(competitors).collect(Collectors.toList());
 

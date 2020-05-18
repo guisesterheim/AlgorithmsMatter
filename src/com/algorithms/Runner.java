@@ -64,10 +64,21 @@ public class Runner {
 
             runner.runCountCompetitors();
 
+            runner.runDirectionsReduction();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runDirectionsReduction(){
+        // Challenge available here: https://www.codewars.com/kata/550f22f4d758534c1100025a/train/java
+
+        String[] arr = new String[]{"NORTH","SOUTH","SOUTH","EAST","WEST","NORTH"};
+
+        DirectionsReduction directionsReduction = new DirectionsReduction();
+        directionsReduction.reduceAndPrint(arr);
     }
 
     private void runCountCompetitors(){
