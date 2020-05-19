@@ -69,10 +69,22 @@ public class Runner {
             runner.runMultiplesOf3Or5();
 
             runner.runContainsPermutation();
+
+            runner.runFindAnagrams();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindAnagrams(){
+        // Leet code challenge: https://leetcode.com/explore/featured/card/may-leetcoding-challenge/536/week-3-may-15th-may-21st/3332/
+
+        String s = "abab";
+        String p = "ab";
+
+        FindAnagrams findAnagrams = new FindAnagrams();
+        findAnagrams.findAndPrint(s, p);
     }
 
     private void runContainsPermutation(){
