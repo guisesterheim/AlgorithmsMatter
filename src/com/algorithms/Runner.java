@@ -71,10 +71,21 @@ public class Runner {
             runner.runContainsPermutation();
 
             runner.runFindAnagrams();
+
+            runner.runSortCharactersByFrequency();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runSortCharactersByFrequency(){
+        // Leet code challenge: https://leetcode.com/explore/featured/card/may-leetcoding-challenge/537/week-4-may-22nd-may-28th/3337/
+
+        String input = "Aabb";
+
+        SortCharacterByFrequency sortCharacterByFrequency = new SortCharacterByFrequency();
+        sortCharacterByFrequency.sortAndPrint(input);
     }
 
     private void runFindAnagrams(){
