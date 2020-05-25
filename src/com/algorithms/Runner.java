@@ -73,10 +73,22 @@ public class Runner {
             runner.runFindAnagrams();
 
             runner.runSortCharactersByFrequency();
+
+            runner.runIntervalListIntersections();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runIntervalListIntersections(){
+        // Leet code challenge: https://leetcode.com/explore/featured/card/may-leetcoding-challenge/537/week-4-may-22nd-may-28th/3338/
+
+        int[][] listA = {{0, 2}, {5, 10}, {13, 23}, {24, 25}};
+        int[][] listB = {{1, 5}, {8, 12}, {15, 24}, {25, 26}};
+
+        IntervalListIntersections intervalListIntersections = new IntervalListIntersections();
+        intervalListIntersections.findAndPrint(listA, listB);
     }
 
     private void runSortCharactersByFrequency(){
