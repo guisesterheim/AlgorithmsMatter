@@ -75,10 +75,20 @@ public class Runner {
             runner.runSortCharactersByFrequency();
 
             runner.runIntervalListIntersections();
+
+            runner.runInvertBinaryTree();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+    
+    private void runInvertBinaryTree(){
+        // Leet code challenge: https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/539/week-1-june-1st-june-7th/3347/
+
+        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        invertBinaryTree.invertAndPrint();
     }
 
     private void runIntervalListIntersections(){
