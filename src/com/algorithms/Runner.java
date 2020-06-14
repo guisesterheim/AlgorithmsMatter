@@ -78,12 +78,24 @@ public class Runner {
 
             runner.runInvertBinaryTree();
 
+            runner.runCalculateCostCityScheduling();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
     }
-    
+
+    private void runCalculateCostCityScheduling(){
+        // Leet code challenge: https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/539/week-1-june-1st-june-7th/3349/
+
+        //int[][] costs = {{10,20},{30,200},{400,50},{30,20}};
+        int[][] costs = {{259,770},{448,54},{926,667},{184,139},{840,118},{577,469}};
+
+        CostOfTravel costOfTravel = new CostOfTravel();
+        costOfTravel.calcAndPrint(costs);
+    }
+
     private void runInvertBinaryTree(){
         // Leet code challenge: https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/539/week-1-june-1st-june-7th/3347/
 
