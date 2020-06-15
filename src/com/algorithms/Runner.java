@@ -8,6 +8,7 @@ public class Runner {
         Runner runner = new Runner();
 
         try{
+            /*
             runner.runMatrixRotation();
 
             runner.runLongestPalindrome();
@@ -81,11 +82,19 @@ public class Runner {
             runner.runCalculateCostCityScheduling();
 
             runner.runFindCheapestFlight();
+             */
+
+            runner.runSearchInABinarySearchTree();
 
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runSearchInABinarySearchTree(){
+        SearchInABinarySearchTree searchInABinarySearchTree = new SearchInABinarySearchTree();
+        searchInABinarySearchTree.findAndPrint();
     }
 
     private void runFindCheapestFlight(){

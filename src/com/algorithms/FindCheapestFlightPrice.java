@@ -1,9 +1,6 @@
 package com.algorithms;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class FindCheapestFlightPrice {
 
@@ -16,57 +13,63 @@ public class FindCheapestFlightPrice {
         System.out.println("Found lowest price: "+findCheapestPrice(n, flights, src, dst, 1));
     }
 
-    /*
-    int n = 3;
-    int[][] flights = {{0,1,100},{1,2,100},{0,2,500}};
-    int src = 0;
-    int dst = 2;
-    int K = 1;
-     */
+    class Pair {
+        int city, cost;
 
-    private int findCheapestPrice(int n, int[][] flights, int src, int dst, int K){
-        if(K == 0){
-            return Arrays.stream(flights)
-                    .filter(ints -> ints[0] == src && ints[1] == dst)
-                    .mapToInt(ints -> ints[2])
-                    .findFirst().orElse(-1);
-        }else{
-            List<Integer> availableCosts = new ArrayList<Integer>();
-
-            Arrays.sort(flights, new Comparator<int[]>() {
-                @Override
-                public int compare(final int[] entry1, final int[] entry2) {
-                    if (entry1[0] > entry2[0])
-                        return 1;
-                    else
-                        return -1;
-                }
-            });
-
-            for(int i = 0; i < flights.length; i++){
-                if(flights[i][0] == src)
-                    findPrices(availableCosts, flights[i][0], dst, 0, flights, K, 0);
-            }
-
-            return availableCosts.stream().min(Integer::compareTo).orElse(-1);
+        Pair(int city, int cost) {
+            this.city = city;
+            this.cost = cost;
         }
     }
 
-    private void findPrices(List<Integer> availableCosts, int src, int dst, int currentPrice, int[][] flights, int KMaxStops, int currentK){
-        if(currentK > KMaxStops)
-            return;
+    class City {
+        int city, distFromSrc, costFromSrc;
 
-        for(int i = 0; i < flights.length; i++){
-            if(flights[i][0] == src && flights[i][1] == dst){
-                if(!availableCosts.contains(currentPrice+flights[i][2])){
-                    availableCosts.add(currentPrice+flights[i][2]);
-                    return;
-                }
+        City(int city, int distFromSrc, int cost) {
+            this.city = city;
+            this.distFromSrc = distFromSrc;
+            this.costFromSrc = cost;
+        }
+    }
+
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
+        // DFS
+        if(n <= 0 || flights == null || flights.length == 0 || K < 0)
+            return -1;
+
+        List<List<Pair>> graph = new ArrayList<>();
+        this.buildGraph(graph, n, flights);
+
+        Queue<City> pQueue = new PriorityQueue<>((City c1, City c2) -> c1.costFromSrc - c2.costFromSrc);
+        pQueue.offer(new City(src, 0, 0));
+
+        while (!pQueue.isEmpty()) {
+            City top = pQueue.poll();
+
+            if (top.city == dst) {
+                return top.costFromSrc;
             }
 
-            if(flights[i][0] == src){
-                findPrices(availableCosts, flights[i][1], dst, currentPrice + flights[i][2], flights, KMaxStops, currentK+1);
+            if (top.distFromSrc > K) {
+                continue;
             }
+
+            List<Pair> neighbors = graph.get(top.city);
+            for (Pair neighbor: neighbors) {
+                pQueue.offer(new City(neighbor.city, top.distFromSrc + 1, top.costFromSrc + neighbor.cost));
+            }
+        }
+
+        return -1;
+    }
+
+    private void buildGraph(List<List<Pair>> graph, int n, int[][] flights) {
+        for (int i = 0; i < n; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int[] flight: flights) {
+            graph.get(flight[0]).add(new Pair(flight[1], flight[2]));
         }
     }
 }
