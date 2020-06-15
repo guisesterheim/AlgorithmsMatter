@@ -80,10 +80,25 @@ public class Runner {
 
             runner.runCalculateCostCityScheduling();
 
+            runner.runFindCheapestFlight();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindCheapestFlight(){
+        int n = 3;
+        //int[][] flights = {{1,2,10},{2,0,7},{1,3,8},{4,0,10},{3,4,2},{4,2,10},{0,3,3},{3,1,6},{2,4,5}};
+        int[][] flights = {{0,1,100},{1,2,100},{0,2,500}};
+        //int[][] flights = {{4,1,1},{1,2,3},{0,3,2},{0,4,10},{3,1,1},{1,4,3}};
+        int src = 0;
+        int dst = 2;
+        int K = 1;
+
+        FindCheapestFlightPrice findCheapestFlightPrice = new FindCheapestFlightPrice();
+        findCheapestFlightPrice.findAndPrint(n, flights, src, dst, K);
     }
 
     private void runCalculateCostCityScheduling(){
