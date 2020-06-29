@@ -86,10 +86,22 @@ public class Runner {
 
             runner.runSearchInABinarySearchTree();
 
+            runner.runFindUniquePathsCount();
+
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindUniquePathsCount(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/543/week-5-june-29th-june-30th/3375/
+
+        int m = 3;
+        int n = 2;
+
+        UniquePaths uniquePaths = new UniquePaths();
+        uniquePaths.findAndPrint(m, n);
     }
 
     private void runSearchInABinarySearchTree(){
