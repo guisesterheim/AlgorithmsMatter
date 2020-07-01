@@ -88,10 +88,20 @@ public class Runner {
 
             runner.runFindUniquePathsCount();
 
+            runner.runCoinStairs();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runCoinStairs(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/544/week-1-july-1st-july-7th/3377/
+
+        int n = Integer.MAX_VALUE;
+
+        CoinStairs coinStairs = new CoinStairs();
+        coinStairs.findAndPrint(n);
     }
 
     private void runFindUniquePathsCount(){
