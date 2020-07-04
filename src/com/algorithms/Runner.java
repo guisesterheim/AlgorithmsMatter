@@ -89,10 +89,32 @@ public class Runner {
             runner.runFindUniquePathsCount();
 
             runner.runCoinStairs();
+
+            //runner.runBinaryTreeLevelOrderTraversal();
+
+            runner.runPrisonCellsToggling();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runPrisonCellsToggling(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/544/week-1-july-1st-july-7th/3379/
+
+        //int[] states = {0,1,0,1,1,0,0,1};
+        //int N = 7;
+        int[] states = {1,0,0,1,0,0,1,0};
+        int N = 1000000000;
+
+        PrisonCellsToggling prisonCellsToggling = new PrisonCellsToggling();
+        prisonCellsToggling.runAndPrint(states, N);
+    }
+
+    private void runBinaryTreeLevelOrderTraversal(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/544/week-1-july-1st-july-7th/3378/
+        BinaryTreeOrderTraversal binaryTreeOrderTraversal = new BinaryTreeOrderTraversal();
+        binaryTreeOrderTraversal.invertAndPrint();
     }
 
     private void runCoinStairs(){
