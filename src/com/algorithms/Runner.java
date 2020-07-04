@@ -93,10 +93,20 @@ public class Runner {
             //runner.runBinaryTreeLevelOrderTraversal();
 
             runner.runPrisonCellsToggling();
+
+            runner.runFindUglyNumberII();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runFindUglyNumberII(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/544/week-1-july-1st-july-7th/3380/
+
+        int n = 11;
+        UglyNumbers uglyNumbers = new UglyNumbers();
+        uglyNumbers.findAndPrint(n);
     }
 
     private void runPrisonCellsToggling(){
