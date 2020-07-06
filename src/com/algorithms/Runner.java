@@ -95,10 +95,20 @@ public class Runner {
             runner.runPrisonCellsToggling();
 
             runner.runFindUglyNumberII();
+
+            runner.runPlusOne();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    private void runPlusOne(){
+        // Leetcode challenge available here: https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/544/week-1-july-1st-july-7th/3382/
+
+        int[] numbers = {4,3,2,1};
+        PlusOne plusOne = new PlusOne();
+        plusOne.addAndPrint(numbers);
     }
 
     private void runFindUglyNumberII(){
