@@ -18,6 +18,5 @@ public class HighestScoringWord {
         return Arrays.stream(words.split(" "))
                 .max(Comparator.comparingInt(word -> word.chars().map(i -> i -96).sum()))
                 .get();
-        //commment
     }
 }
